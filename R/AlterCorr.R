@@ -61,3 +61,4 @@ AlterCorr<-function(x,y,type=c("pearson","MIC","RDC","dCor"),R=100){
   colnames(result)<-c("Correlation","pvalue")
   return(result)
 }
+

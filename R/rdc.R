@@ -44,3 +44,4 @@ rdc <- function(x,y,k=20,s=1/6,f=sin) {
   return(rdc)
 }
 
+

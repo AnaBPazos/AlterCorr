@@ -104,3 +104,4 @@ AlterCorrM<-function(X,Y,type=c("pearson","MIC","RDC","dCor"),
   return(res)
 }
 
+

@@ -56,3 +56,4 @@ MIC <- function(x,y,R=100,...) {
   colnames(mic2)<-c("MIC","p-value")
   return(mic2)
 }
+
