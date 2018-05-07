@@ -5,7 +5,8 @@
 \title{Alternatives to the Pearson correlation with p-values for Matrix}
 \usage{
 AlterCorrM(X, Y, type = c("pearson", "MIC", "RDC", "dCor"),
-  comparison = c("all", "pairs"), R = 100)
+  comparison = c("all", "pairs"), R = 100, method = c("holm", "hochberg",
+  "hommel", "bonferroni", "BH", "BY", "fdr", "none"))
 }
 \arguments{
 \item{type}{Specifies the type of correlations to compute. "Pearson" for the
@@ -22,6 +23,9 @@ of all the variables with all.}
 
 \item{R}{Number of permutations to be made for MIC and dCor to calculate
 the p-values}
+
+\item{method}{Correction method. Can be abbreviated. The possible values are
+"holm", "hochberg", "hommel", "bonferroni", "BH", "BY", "fdr", "none".}
 
 \item{x}{A numeric vector or matrix or dataframe}
 
@@ -47,10 +51,10 @@ time.
 #Correlations using the "pair" comparison
 x<-replicate(20,rnorm(20, sd=2.5))
 y<-2*x+replicate(20,rnorm(20, sd=2.5))
-AlterCorrM(x,y,type="pearson",comparison="pairs")
-AlterCorrM(x,y,type="MIC",comparison="pairs",R=50)
-AlterCorrM(x,y,type="RDC",comparison="pairs")
-AlterCorrM(x,y,type="dCor",comparison="pairs",R=50)
+AlterCorrM(x,y,type="pearson",comparison="pairs",method="fdr")
+AlterCorrM(x,y,type="MIC",comparison="pairs",R=50,method="fdr")
+AlterCorrM(x,y,type="RDC",comparison="pairs",method="fdr")
+AlterCorrM(x,y,type="dCor",comparison="pairs",R=100,method="fdr")
 
 #Correlations using the "all" comparison
 x<-replicate(5,rnorm(10, sd=2.5))
@@ -58,10 +62,10 @@ colnames(x)<-letters[1:ncol(x)]
 y<-replicate(7,rnorm(10, mean=1.5, sd =0.85))
 colnames(y)<-letters[1:ncol(y)]
 
-AlterCorrM(x,y,type="pearson",comparison="all")
-AlterCorrM(x,y,type="MIC",comparison="all",R=50)
-AlterCorrM(x,y,type="RDC",comparison="all")
-AlterCorrM(x,y,type="dCor",comparison="all",R=50)
+AlterCorrM(x,y,type="pearson",comparison="all",method="fdr")
+AlterCorrM(x,y,type="MIC",comparison="all",R=50,method="fdr")
+AlterCorrM(x,y,type="RDC",comparison="all",method="fdr")
+AlterCorrM(x,y,type="dCor",comparison="all",R=50,method="fdr")
 
 }
 \keyword{correlation}

@@ -8,10 +8,10 @@ Description: This package calculate the correlations between two variables or ma
     and Correlation of distances (dCor). These coefficients differ from the 
     Pearson correlation in that they detect non-linear dependencies and are not 
     subject to the normality of the data. Together with the correlations, calculate 
-    the p-values for each type of coefficient. When the function is used for 
-    matrices and dataframes, the difference between the calculation of paired 
-    data (must have the same dimensions) or independent (they must only coincide 
-    in the same number of columns).
+    the p-values and the adjusted p-values for each type of coefficient. When the 
+    function is used for matrices and dataframes, the difference between the 
+    calculation of paired data (must have the same dimensions) or independent 
+    (they must only coincide in the same number of columns).
 Depends: R (>= 3.4.0), Hmisc (>= 4.1-1), minerva (>= 1.4.7), energy (>= 1.7-2), stats (>= 3.4.0)
 License: GPL 2
 Encoding: UTF-8
