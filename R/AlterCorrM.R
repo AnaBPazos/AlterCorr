@@ -10,8 +10,8 @@
 #' it will be calculated in pairs.
 #'
 #'
-#' @param x A numeric vector or matrix or dataframe
-#' @param y A numeric matrix or dataframe, with the same number of rows as \code{x}
+#' @param X A numeric vector or matrix or dataframe
+#' @param Y A numeric matrix or dataframe, with the same number of rows as \code{x}
 #' @param type Specifies the type of correlations to compute. "Pearson" for the
 #' Pearson Correlation, "MIC" for the Maximum Information Coefficient, "RDC" for
 #' the Random Dependency Coefficient and finally "dCor" for the Correlation of
