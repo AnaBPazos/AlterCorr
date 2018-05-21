@@ -1,6 +1,6 @@
 # AlterCorr
 
-Alternatives to the Pearson correlation with p-values for Matrix
+## Alternatives to the Pearson correlation with p-values for Matrix
 
 This package calculate the correlations between two variables or matrices 
 or dataframes, for four independence coefficients; Pearson correlation, 
@@ -18,6 +18,6 @@ It consists of four functions:
 <B>AlterCorrM</B> that performs calculations for value matrices using the
 AlterCorr function.
 The <B>MIC</B> function calculates the maximum information coefficient and its
-#' p-values with a permutations test.
-#' The <B>RDC</B> function calculates the coefficient of random dependence, 
-#' together with the significance test using the Bartlett approximation.
+p-values with a permutations test.
+The <B>RDC</B> function calculates the coefficient of random dependence, 
+together with the significance test using the Bartlett approximation.
