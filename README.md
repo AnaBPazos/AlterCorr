@@ -1,4 +1,4 @@
-# AlterCorr"
+# AlterCorr
 
 #' Alternatives to the Pearson correlation with p-values for Matrix
 #'
