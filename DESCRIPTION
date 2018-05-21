@@ -1,6 +1,6 @@
 Package: AlterCorr
 Title: ALTERNATIVES TO THE PEARSON CORRELATION
-Version: 0.0.0.9000
+Version: 0.0.1
 Authors@R: person("Ana Belén", "Pazos", email = "anab.pazos.ruiz@gmail.com", role = c("aut", "cre"))
 Description: This package calculate the correlations between two variables or matrices 
     or dataframes, for four independence coefficients; Pearson correlation, 
